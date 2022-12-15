@@ -2,10 +2,15 @@
  * MenuException.java
  * This class contains syntax errors.
  */
-public class MenuException inherits Exception
+public class MenuException extends Exception
   {
-    public MenuException(String choice)
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L; //Eclipse said I needed this, automatically suggested it to fix an error//
+
+	public MenuException(String choice)
     {
-      supper(choice);
+      super(choice);
     }
   }
